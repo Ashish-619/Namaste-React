@@ -81,7 +81,7 @@
    - **`defer`**:  
      Loads the script in parallel with HTML parsing, but execution is deferred until the HTML document is fully parsed.
 
-   - ![InShot_20241121_041543223](https://github.com/user-attachments/assets/d3cddf01-8f17-490b-b60d-b384e70467e5)
+   - ![InShot_20241121_041543223](https://github.com/user-attachments/assets/57c6f30c-9c40-42f9-9e2f-6de3b49d7f90)
 
 
 ---
