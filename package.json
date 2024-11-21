@@ -1,0 +1,20 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "React Interview Questions & Answers.",
+  "scripts": {
+    "start": "parcel Chapter01-Inception/index.html",
+    "build": "parcel build Chapter01-Inception/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashish Vaidya",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  }
+}
