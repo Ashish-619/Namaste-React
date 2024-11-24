@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 5%;
+    height: auto;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.searchbar {
+    width: 10vw;
+    height: 8vh;
+    padding: 0 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 500px) {
+    .searchbar {
+        width: 7vw;
+        height: 6vh;
+        transition: all 500ms ease;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    img {
+        width: 7vw;
+        height: auto;
+    }
+}
