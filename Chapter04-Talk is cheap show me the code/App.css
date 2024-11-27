@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-1 {
+    width: 5%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.img-1:hover {
+    transform: scale(1.1);
+}
+
+.nav-items>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.nav-items>ul>li {
+    cursor: pointer;
+}
+
+.card {
+    width: 15%;
+    min-width: 200px;
+    height: 350px;
+    flex-wrap: wrap;
+    background-color: bisque;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: rgb(247, 215, 177);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.costForTwo {
+    font-size: small;
+}
+
+.rating,
+.map,
+.price,
+.cuisine {
+    gap: 5px;
+    font-size: small;
+    display: flex;
+    margin-top: 5px;
+}
+
+.rating-img,
+.map-img,
+.price-img,
+.cuisine-img {
+    width: 15px;
+    height: 15px;
+}
+
+.restaurant-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+@media screen and (max-width: 770px) {
+    img {
+        width: 7vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-1 {
+        width: 10%;
+    }
+
+    .nav-items>ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-items>ul>li {
+        font-size: 14px;
+    }
+
+    .card {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .restaurant-list {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .img-1 {
+        width: 20%;
+    }
+
+    .nav-items>ul>li {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .restaurant-list {
+        padding: 5px;
+    }
+}
