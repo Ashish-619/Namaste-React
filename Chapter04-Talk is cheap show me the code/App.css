@@ -89,6 +89,34 @@ header {
     padding: 10px;
 }
 
+.searchbar {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.searchbar-box {
+    padding: 10px;
+    border-radius: 5px;
+    width: 20%;
+    height: auto;
+}
+
+.search-btn {
+    border-radius: 5px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.no-restaurant {
+    text-align: center;
+    color: gray;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
 @media screen and (max-width: 770px) {
     img {
         width: 7vw;
