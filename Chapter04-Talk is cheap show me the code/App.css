@@ -103,17 +103,59 @@ header {
     height: auto;
 }
 
-.search-btn {
-    border-radius: 5px;
-    width: 55px;
-    cursor: pointer;
-}
-
 .no-restaurant {
     text-align: center;
     color: gray;
     font-size: 18px;
     margin-top: 20px;
+}
+
+.shimmer-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.shimmer-card {
+    width: 15%;
+    min-width: 200px;
+    height: 350px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.5s infinite;
+    padding: 12px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.logout-btn {
+    padding: 5px 10px;
+    background-color: rgb(236, 74, 74);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.login-btn {
+    padding: 5px 10px;
+    background-color: rgb(68, 139, 35);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Add shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 
