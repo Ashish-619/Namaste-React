@@ -36,8 +36,7 @@ header {
 }
 
 .card {
-    width: 15%;
-    min-width: 200px;
+    min-width: 0px;
     height: 380px;
     flex-wrap: wrap;
     background-color: bisque;
@@ -84,9 +83,17 @@ header {
 .restaurant-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
+    /* Space between cards */
     padding: 10px;
+}
+
+.restaurant-card {
+    flex: 1 1 300px;
+    /* Ensures consistent sizing */
+    max-width: 300px;
 }
 
 .searchbar {
@@ -118,16 +125,30 @@ header {
     padding: 10px;
 }
 
+/* Parent container to arrange cards */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows wrapping to the next row */
+    justify-content: center;
+    /* Centers items horizontally */
+    gap: 20px;
+    /* Adds space between cards */
+    padding: 10px;
+}
+
+/* Individual shimmer card styling */
 .shimmer-card {
-    width: 15%;
-    min-width: 200px;
+    width: 200px;
     height: 350px;
     background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
     background-size: 400% 100%;
     animation: shimmer 1.5s infinite;
     padding: 12px;
-    margin: 20px auto;
+    margin: 0;
     border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 .logout-btn {
@@ -146,6 +167,30 @@ header {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+}
+
+@media (max-width: 768px) {
+    .shimmer-card {
+        width: 150px; /* Smaller width for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .shimmer-container {
+        flex-direction: column; /* Stack cards vertically */
+    }
+}
+
+
+/* Add shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 .restaurant-menu {
@@ -376,6 +421,55 @@ header {
     background-size: 1000px 100%;
 }
 
+.login-form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    height: auto;
+    flex-direction: column;
+    margin: 10% 25%;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.form-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 20%;
+    gap: 20px;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+.login-btn-form>button {
+    margin-top: 15px;
+    padding: 10px 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+
 @keyframes shimmer {
     from {
         background-position: -1000px 0;
@@ -383,17 +477,6 @@ header {
 
     to {
         background-position: 1000px 0;
-    }
-}
-
-/* Add shimmer animation */
-@keyframes shimmer {
-    0% {
-        background-position: -100% 0;
-    }
-
-    100% {
-        background-position: 100% 0;
     }
 }
 

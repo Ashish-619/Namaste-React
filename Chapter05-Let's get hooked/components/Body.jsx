@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { RestaurantList } from "../utils/RestaurantList";
 import RestaurantCard from "./RestaurantCard";
 import "../../Chapter04-Talk is cheap show me the code/App.css";
+import RestaurantMenu from "../../Chapter07-Finding the path/components/RestaurantMenu";
 
 const Searchbar = ({ text, setText, setFilteredRestaurants }) => {
 
@@ -39,6 +40,7 @@ const Body = () => {
                 ) : (
                     <p className="no-restaurant">No restaurants found.</p>
                 )}
+               
             </div>
         </>
     )

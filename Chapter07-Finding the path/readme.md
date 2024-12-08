@@ -148,3 +148,25 @@ if ($_SERVER['REQUEST_URI'] === '/about') {
   include('home.html');
 }
 ```
+
+--- 
+### Q6. **`useRouter` Hook in React**
+
+This hook allows you to access the current error state of the router.
+The `useRouteError` hook returns an object with the following properties:
+
+`error`: The current error object, or null if there is no error.
+`isError`: A boolean indicating whether or not there is an error.
+`message`: The error message, or undefined if there is no error.
+To use the `useRouteError` hook, you need to import it from `react-router-dom`. Then, you can use it in your component like this:
+
+```Javascript
+import { useRouteError } from "react-router-dom";
+
+const MyComponent = () => {
+  const { error, isError, message } = useRouteError();
+  if (isError) {
+    // Handle the error
+  }
+};
+```
