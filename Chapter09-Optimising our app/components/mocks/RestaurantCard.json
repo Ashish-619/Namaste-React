@@ -1,0 +1,62 @@
+{
+    "id": "841660",
+    "name": "Domino's Pizza",
+    "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/29/786d1178-6e5a-459f-9789-3ef3ee27f8b3_841660.jpg",
+    "locality": "UDHANA DARWAZA",
+    "areaName": "SHHLOK BUSINESS CENTRE",
+    "costForTwo": "₹400 for two",
+    "cuisines": [
+        "Pizzas",
+        "Italian",
+        "Pastas",
+        "Desserts"
+    ],
+    "avgRating": 4.3,
+    "veg": true,
+    "parentId": "2456",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "262",
+    "sla": {
+        "deliveryTime": 25,
+        "lastMileTravel": 4,
+        "serviceability": "SERVICEABLE",
+        "slaString": "20-25 mins",
+        "lastMileTravelString": "4.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2024-12-27 02:00:00",
+        "opened": true
+    },
+    "badges": {},
+    "isOpen": true,
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+        }
+    },
+    "aggregatedDiscountInfoV3": {
+        "header": "₹175 OFF",
+        "subHeader": "ABOVE ₹999",
+        "discountTag": "FLAT DEAL"
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {},
+    "externalRatings": {
+        "aggregatedRating": {
+            "rating": "--"
+        }
+    },
+    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}
