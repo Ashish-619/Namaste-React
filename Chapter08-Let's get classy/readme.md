@@ -1,7 +1,3 @@
-Here is a comprehensive breakdown of the topics in your query, along with examples and explanations:
-
----
-
 ## **Q1. How do you create Nested Routes in React Router DOM?**
 
 ### **What are Nested Routes?**
